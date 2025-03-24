@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  metasploitable3:
+    image: pandaxxx/metasploitable3:latest
+    container_name: metasploitable3
+    privileged: true  # Some services may need extra privileges
+    # Keep container alive by running a shell script
+    # command: /bin/bash -c "service ssh start && service mysql start && service apache2 start && tail -f /dev/null "
+    ports:
+      - "21:21"       # FTP
+      - "2222:22"       # SSH
+      - "25:25"       # SMTP
+      - "5353:53"       # DNS
+      - "80:80"       # HTTP
+      - "111:111"     # RPCBind
+      - "139:139"     # NetBIOS/SMB
+      - "443:443"     # HTTPS
+      - "445:445"     # Microsoft-DS/SMB
+      - "512:512"
+      - "513:513"
+      - "514:514"
+      - "1099:1099"
+      - "1524:1524"
+      - "2049:2049"
+      - "2121:2121"
+      - "3306:3306"   # MySQL
+      - "3632:3632"
+      - "5432:5432"   # PostgreSQL
+      - "5900:5900"   # VNC
+      - "6000:6000"
+      - "6667:6667"
+      - "8009:8009"
+      - "8180:8180"
+      - "8443:8443"
+    restart: unless-stopped

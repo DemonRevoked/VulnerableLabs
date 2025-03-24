@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  dvwa:
+    image: vulnerables/web-dvwa
+    ports:
+      - "8081:80"
+    # The following settings simulate the interactive mode (-it)
+    tty: true
+    stdin_open: true
