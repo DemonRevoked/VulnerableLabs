@@ -101,10 +101,3 @@ Contributions, suggestions, and improvements are welcome. Please open an issue o
 ## License
 
 This repository is released under the [MIT License](LICENSE).
-
----
-
-## Repository
-
-[https://github.com/DemonRevoked/VulnerableLabs.git](https://github.com/DemonRevoked/VulnerableLabs.git)
-```
