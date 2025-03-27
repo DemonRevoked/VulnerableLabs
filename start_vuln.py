@@ -42,7 +42,7 @@ def main():
         # Clean up running Docker containers
         print("Cleaning Docker containers ...")
         ps_result = subprocess.run(
-            ["sudo", "docker", "ps", "-q"],
+            ["sudo", "docker", "ps", "-aq"],
             capture_output=True, text=True
         )
         container_ids = ps_result.stdout.strip().splitlines()
