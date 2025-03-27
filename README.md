@@ -1,4 +1,3 @@
-```markdown
 # VulnerableLabs
 
 **VulnerableLabs** is a collection of intentionally vulnerable Docker environments designed for security testing, penetration testing practice, vulnerability analysis, and research. Each environment hosts a specific vulnerable application that can be deployed via Docker Compose.
